@@ -78,6 +78,10 @@ html,body {
     background-color: #0e5cd1;
 }
 
+.nav a.full-btn:visited {
+    background-color: #0b49a7;
+}
+
 .nav ul {
     padding: 0;
 }
@@ -90,6 +94,10 @@ html,body {
 
 .vertical-align-middle {
     vertical-align: middle;
+}
+
+.ljod {
+    padding: 10px 0 10px 30px;
 }
 
 img {
