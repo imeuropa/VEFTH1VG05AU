@@ -1,0 +1,180 @@
+/*
+
+    riviant.css
+    copyright (c) 2020 europea ltd.
+    under license to riviant ltd.
+
+*/
+
+/* font imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+}
+
+/* components and global styles */
+
+html,body {
+    padding: 20px;
+    margin: 0;
+}
+
+span.riviant {
+    letter-spacing: 5px;
+    text-indent: 5px;
+    text-transform: uppercase;
+}
+
+.breadcrumbs {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 10px;
+}
+
+.breadcrumbs p {
+    margin: 0;
+}
+
+.breadcrumbs p a {
+    color: black;
+}
+
+/* header space */
+
+header {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+header h1 {
+    text-transform: uppercase;
+    letter-spacing: 16px;
+    text-indent: 16px;
+}
+
+header.generic {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+header.generic nav ul li {
+    display: block;
+}
+
+header.generic nav ul li a {
+    width: 100%;
+}
+
+header.generic .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* navigation bar */
+
+
+header nav {
+    border-top: 1px solid black;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0;
+    margin: 0 -2px 0 -2px;
+}
+
+header nav ul li a {
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 8px 12px 8px 12px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+/* main area */
+
+main.home {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+main.investors {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+
+main.generic {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+}
+
+main > * {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+main.home aside:not(:last-child) {
+    border-right: none;
+}
+
+main.home aside:not(:first-child) {
+    border-left: none;
+}
+
+main.investors aside:not(:first-child) {
+    border-left: none;
+}
+
+main.generic aside {
+    border-right: none;
+}
+
+main .quote {
+    border: 1px solid black;
+}
+
+/* footer space */
+
+footer {
+    text-align: center;
+    border: 1px solid black;
+    border-top: none;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    display: inline;
+    padding: 10px;
+}
+
+footer li a {
+    color: black;
+}
