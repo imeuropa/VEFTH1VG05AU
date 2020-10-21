@@ -1,0 +1,130 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.bg-red {
+    background-color: rgb(223, 55, 55);
+}
+
+.bg-blue {
+    background-color: rgb(53, 116, 233);
+}
+
+.bg-yellow {
+    background-color: rgb(231, 231, 9);
+}
+
+.bg-dark {
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+.grid-area-header {
+    grid-area: header;
+}
+
+.grid-area-article {
+    grid-area: article;
+}
+
+.grid-area-aside1 {
+    grid-area: aside1;
+}
+
+.grid-area-aside2 {
+    grid-area: aside2;
+}
+
+
+.navigation {
+    width: 100%;
+}
+
+.navigation ul {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    display: block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 7px 15px 7px 15px;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    text-decoration: none;
+}
+
+.navigation ul li a:hover {
+    background-color: rgb(39, 39, 39);
+}
+
+.header {
+    color: white;
+    padding: 25px 10px 25px 10px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.article {
+    color: white;
+    padding: 20px 10px 20px 10px;
+}
+
+.article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
+    margin: 0;
+}
+
+.aside {
+    padding: 20px 10px 20px 10px;
+}
+
+.aside h1, .aside h2, .aside h3, .aside h4, .aside h5, .aside h6 {
+    margin: 0;
+}
+
+.footer {
+    padding: 15px;
+}
+
+@media only screen and (min-width: 37.5em) {
+    main {
+        display: grid;
+        grid-template-areas:
+        'header header header header header header'
+        'aside1 article article article article article'
+        'aside2 article article article article article';
+    }    
+    .navigation ul {
+        background-color: rgb(59, 59, 59);
+    }    
+    .navigation ul li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+    main {
+        display: grid;
+        grid-template-areas:
+        'header header header header header header'
+        'aside1 article article article article aside2';
+    }
+    .container {
+        max-width: 64em;
+        margin: 0 auto;
+    }
+}
