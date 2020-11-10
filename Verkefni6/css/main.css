@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    max-width: 100%;
+}
+
+html,body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.verkefni {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.hero {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0065BE;
+}
+
+.hero .centre {
+    text-align: center;
+}
+
+.hero .centre h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 6rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    max-width: 100%;
+}
+
+.hero .centre a {
+    background-color: white;
+    padding: 15px 30px 15px 30px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.25s;
+}
+
+.hero .centre a:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.content {
+    /*background-color: rgb(255, 47, 47);*/
+    background-color: white;
+}
+
+.content .card {
+    margin: 0 auto;
+    max-width: 80em;
+}
+
+.content .row {
+    padding: 25px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content .row h1 {
+    margin: 0;
+}
+
+.content .row .col {
+    padding: 15px;
+}
+
+.footer {
+    background-color: #0065BE;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer nav {
+    color: white;
+}
+
+.footer nav a {
+    color: rgb(223, 223, 223);
+}
+
+@media only screen and (max-width: 970px) {
+    .content .row {
+        padding: 25px;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .hero .centre h1 {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .hero .centre h1 {
+        font-size: 4rem;
+    }
+    .footer {
+        background-color: #0065BE;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .hero .centre h1 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .hero .centre h1 {
+        font-size: 2.5rem;
+    }
+}
